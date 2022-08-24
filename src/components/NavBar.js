@@ -8,7 +8,13 @@ const NavBar = () => {
                 <ul>
                 <li><a href="#">Index</a></li>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
+                <li><a href="#">Productos</a>
+                    <ul>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Combos</a></li>
+                        <li><a href="#">--------</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Contáctanos</a></li>
                 </ul>
         </nav>

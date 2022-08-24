@@ -12,24 +12,58 @@ nav {
 }
 nav logo{
   text-align: left;
- 
   font-size: 1.5em;
 }
+nav ul a {
+  display:block;
+  color: black;
+  text-decoration:none;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
 
-nav li {
+nav ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
   list-style: none;
-  display: inline-block;
-  padding: 0 20px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #555;
-  transition: all 0.3s ease 0s;
+nav ul li:hover {
+  background: #ddd ;
+  border-radius: 10px;
 }
+
+nav ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+
+nav ul ul li {
+  float:none;
+  width:150px;
+}
+
+nav ul ul a {
+  line-height:120%;
+  padding:20px 15px;
+}
+
+nav ul li:hover > ul {
+  display:block;
+}
+
 
 nav a:hover {
-  color: tomato;
+  color: whitesmoke;
 }
 
 h2{
