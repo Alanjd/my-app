@@ -1,21 +1,19 @@
 import * as React from 'react';
 import "./App.css";
 import NavBar from './components/NavBar';
-
+import ItemListContainer from './components/ItemListContainer';
 
 
 class App extends React.Component {
   render() {
     return(
-      <div className='App'>      
+      <>      
         <NavBar/>
-    
-
-        <div>
-          <h2>Ofertas</h2>
-        </div>
-
-      </div>
+        <ItemListContainer texto = "Jagermeister" price= "$6990.00"/>
+        <ItemListContainer texto = "fernet" price="1300.00"/>
+        <ItemListContainer texto = "Campari" price= "800.00"/>
+      
+      </>
   
     );
   }
